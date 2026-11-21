@@ -55,5 +55,30 @@ To resolve a conflict:
 4. Remove the conflict markers and save the file.  
 5. Use git add <file_name> and git commit to finish the merge.
 
+## Pulling Changes
+`git pull` is used to update local files with changes from a remote repository (GitHub). It is especially useful when working on the same project on different computers or collaborating with other people.  
+### How to Pull Changes
+1. Clone the repository on another computer:  
+`git clone <repository_URL>`. 
+2. Modify the files, commit the changes and push them to GitHub:  
+`git add .`  
+'git commit -m "new changes"'  
+`git push origin main`  
+Return to the first computer and download the changes:  
+`git pull`
+
+### Pull Conflicts
+Conflicts may occur when the same parts of a file are modified independently on different computers or branches.  
+- `git fetch` – downloads information about remote changes without modifying local files.
+- `git merge origin/main` – attempts to merge the remote changes into the current branch.  
+- `git status` – shows which files contain unresolved conflicts.  
+
+If a conflict occurs, we need to open the file, choose which changes to keep, remove the conflict markers and save the file.  
+
+Finally, we can use:  
+1. `git add <file_name>` – stages the resolved file.  
+- `git commit -m "resolve merge conflict"` – saves the resolution.  
+- `git push` – uploads the merged changes to GitHub.
+
 ## Why Is Git Useful?
 Git helps organize projects, track changes, and recover previous versions of files. It is especially useful in scientific research because it supports reproducibility, documentation, and collaboration between researchers.
