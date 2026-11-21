@@ -46,7 +46,7 @@ Branches allow users to experiment with different versions of a project without 
 - `git merge new_branch` – merges changes from another branch into the current branch.  
 - `git diff main..new_branch` – compares the contents of two branches.
 
-### Merge Conflicts
+## Merge Conflicts
 A merge conflict can occur when different branches modify the same part of a file. Git cannot automatically decide which version should be kept.  
 To resolve a conflict:  
 1. Open the file containing the conflict.  
