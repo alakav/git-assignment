@@ -62,7 +62,7 @@ To resolve a conflict:
 `git clone <repository_URL>`. 
 2. Modify the files, commit the changes and push them to GitHub:  
 `git add .`  
-'git commit -m "new changes"'  
+`git commit -m "new changes"`  
 `git push origin main`  
 Return to the first computer and download the changes:  
 `git pull`
